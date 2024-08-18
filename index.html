@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Fixed Values</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Select Vocabulary</h2>
+            <ul id="file-list">
+                <!-- The JavaScript will populate this list -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <h1 class="heading">German Words</h1>
+                <div class="timer-box">
+                    <div class="timer" id="timer">00:00:00</div>
+                    <div class="timer-buttons">
+                        <button class="button" id="start-timer">Start</button>
+                        <button class="button" id="stop-timer">Stop</button>
+                        <button class="button" id="reset-timer">Reset</button>
+                    </div>
+                </div>
+                <div class="score-container">
+                    <div class="score-box">
+                        <div class="score-label">Total Words:</div>
+                        <div class="score" id="total-words">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-label">Correct:</div>
+                        <div class="score" id="correct-count">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-label">Wrong:</div>
+                        <div class="score" id="wrong-count">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-label">Right Percentage:</div>
+                        <div class="percentage" id="right-percentage">0%</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="display-area-left-key" class="key-value-pair">let's</div>
+                    <div id="display-area-left-value" class="key-value-pair">Start</div>
+                    <div id="display-area-right-key" class="key-value-pair">the game</div>
+                    <div id="display-area-right-value" class="key-value-pair">?</div>
+                </div>
+                <div class="button-container">
+                    <button class="button right" id="right-button">Right</button>
+                    <button class="button wrong" id="wrong-button">Wrong</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js" defer></script>
+</body>
+</html>
